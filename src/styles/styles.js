@@ -1,5 +1,5 @@
 import { Button, StyleSheet } from "react-native";
-import { primaryColor, secondColor } from './variables'
+import { primaryColor, secondColor } from '../includs/variables'
 
 export default StyleSheet.create({
     cardTitle:{
@@ -16,27 +16,37 @@ export default StyleSheet.create({
         borderWidth: 1,
         borderColor: 'rgba(0,0,0,0.2)',
         padding: 10,
-        flexDirection: 'column',
         justifyContent: 'space-between'
     },
+    cardDirectionColoum:{
+        flexDirection: 'coloum',
+    },
+    cardDirectionRow:{
+        flexDirection: 'row',
+    },
     title: {
-        fontSize: 18,
+        fontSize: 20,
         fontWeight: 'bold',
         color: primaryColor
     },
     subtitle: {
-        marginTop:20,
+        marginTop:10,
         fontSize: 18,
         color: secondColor
     },
     subtitleNoMargin: {
         fontSize: 18,
-        color: secondColor
+        color: 'black'
     },
     description: {
-        fontSize: 14,
-        color: secondColor,
-        maxHeight: 36,
+        fontSize: 18,
+        color: 'black',
+        // maxHeight: 36,
+    },
+    descriptionBold: {
+        fontSize: 18,
+        color: 'black',
+        fontWeight:'bold'
     },
     switch: {
         alignItems: 'center',
@@ -56,5 +66,32 @@ export default StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         paddingTop: 10
-    }
+    },
+    borrowedFlag:{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'top',
+        // paddingTop: 10,
+        color:primaryColor
+    },
+    buttonContainer:{
+        padding:20
+    },
+    imageContainer: {
+        // flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    imageSmall: {
+        marginHorizontal:20,
+        width: 70,
+        height: 100,
+        resizeMode: 'cover',
+      },
+      imageLarge: {
+        width: 200,
+        height: 280 ,
+        resizeMode: 'cover',
+        marginVertical:10,
+      }
 });
